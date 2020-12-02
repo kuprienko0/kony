@@ -16,38 +16,34 @@ function task2 (str){
     console.log(str);
 };
 
-function task3(cards) {
+function task3 (cards) {
     const A = new Array(11).fill(2);
     const B = new Array(11).fill(2);
-    let isLose = false;
     const check = function(arr){
-        return  arr.filter((playerHp) => playerHp > 0).length > 7
+        return  arr.filter((playerHp) => playerHp > 0).length >=7
     }
     cards.forEach((card) => {
-        if (!isLose) {
+        if (check(A) && check(B)) {
             switch (card[0]){
                 case "A":{
-                    if (card[2] == 'Y') {
-                        A[card[1]-1 ] -= 1
+                    if (card[card.length-1] == 'Y') {
+                        A[card.match(/\d+/)[0]-1] -= 1
                     } else {
-                        A[card[1]-1 ] -= 2
+                        console.log(card.match(/\d+/)[0])
+                        A[card.match(/\d+/)[0]-1] -= 2
+                        console.log(A)
                     }
                     break;
                 }
                 case "B":{
-                    if (card[2] == 'Y') {
-                        B[card[1]-1 ] -= 1
+                    if (card[card.length-1] == 'Y') {
+                        B[card.match(/\d+/)[0]-1] -= 1
                     } else {
-                        B[card[1]-1 ] -= 2
+                        B[card.match(/\d+/)[0]-1] -= 2
                     }
                     break;
                 }
             }
-            const checkA = check(A);
-            const checkB = check(B);
-            if (!checkA || !checkB) {
-                isLose = true
-            };
         }
 
     })
@@ -56,7 +52,6 @@ function task3(cards) {
         B.filter((playerHp) => playerHp > 0).length
     ]
 }
+task3(["A4R", "A6R", "A8R", "A10R", "A11R"]);
 task1(1234);
 task2('is2 Thi1s T4est 3a');
-const rez = task3(['A4R', 'A5R', 'B4Y','B6Y', 'B6Y', 'B6Y', 'B7R']);
-console.log(rez);
