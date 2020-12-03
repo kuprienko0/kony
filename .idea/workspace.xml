@@ -19,24 +19,34 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1c728fb-27cd-41be-ad1a-6a4b6674332e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="706f5f50-0d71-4b54-aace-848596addd0d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/HW2/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW2/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/HW1/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
-  <component name="ProjectId" id="1l6Jwgpx9gXfxqwg2XB9oAYkRqB" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1l7NIIhQgDcclFwNHICiNd6wPmo" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -44,12 +54,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d1c728fb-27cd-41be-ad1a-6a4b6674332e" name="Default Changelist" comment="" />
-      <created>1606911850461</created>
+      <changelist id="706f5f50-0d71-4b54-aace-848596addd0d" name="Default Changelist" comment="" />
+      <created>1606944093523</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1606911850461</updated>
-      <workItem from="1606911851913" duration="4317000" />
+      <updated>1606944093523</updated>
+      <workItem from="1606944098899" duration="14988000" />
+      <workItem from="1606998409268" duration="2885000" />
     </task>
     <servers />
   </component>
@@ -66,5 +77,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
