@@ -71,18 +71,14 @@ function mySubstr(str, start, length){
     return rez;
 }
 
-//substr()
+//substring2()
 function mySubstring2(str, indexA, indexB){
     let searchTo = indexB;
-    let rez = "";
     let searchFrom = indexA;
+    let rez = "";
     if (indexA ==indexB) return "";
     if (indexA < 0 || indexA == NaN) indexA = 0;
     if (indexB < 0 || indexB == NaN) indexB = 0;
-
-    if (length && start+length <= str.length) searchTo = start+length;
-    if (start < 0) searchFrom = str.length+start
-    if (str.length - length < searchFrom) searchTo = str.length;
     for (let i = searchFrom; i<searchTo; i++){
         rez += str[i];
     }
