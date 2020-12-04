@@ -127,4 +127,6 @@ console.log(myRepeat('I WILL NOT WASTE CHALK, '));
 console.log(mySubstr('I love Dnipro', 2,4));
 console.log(mySubstr('I love Dnipro', -2,3 ));
 console.log(mySubstring('I love Dnipro', 2,3 ));
-// console.log(mySubstring('I love Dnipro', 2));
+console.log(mySubstring2('I love Dnipro', 2,3 ));
+console.log(mySubstring('I love Dnipro', 2));
+console.log(mySubstring2('I love Dnipro', 2));
