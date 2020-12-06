@@ -22,7 +22,7 @@ function myShift (arr){
     return arr;
 }
 // unshift
-function myUnshift(arr, args) {
+function myUnshift(arr, ...args) {
     let myArr = [...args, ...arr];
     return myArr.length
 }
@@ -60,7 +60,7 @@ console.log(forEach)
 
 console.log(myPop(["i","love","Dnipro"]));
 console.log(myPush(["i","love","Dnipro"],["so","much","!"]));
-console.log(myUnshift(["i","love","Dnipro"],["so","much","!"]));
+console.log(myUnshift(["i","love","Dnipro"],"so","much","!"));
 console.log(myShift(["v","i","c","t","o","r","y"]));
 console.log(myConcat(["i","love","Dnipro"],["so","much","!"]));
 console.log(fromMapToReduce(["Яблоко","Банан","Апельсин"]));
