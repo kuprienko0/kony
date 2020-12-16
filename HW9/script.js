@@ -10,7 +10,9 @@ function setCookie(cname, cvalue, exdays){
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
     const expires = `expires=${d.toUTCString()}`;
     document.cookie = `${cname}=${cvalue};${expires};path=/`;
-}
+};
+const cookie = getCookie('loader');
+showLoaderPreview(cookie, false, false)
 let rez = '';
 function time(){
     const lastVisit = getCookie('lastVisit');
@@ -124,11 +126,7 @@ const showLoaderPreview = (loader) => {
 };
 let loadInterval;
 select.addEventListener('change',(event)=>{
-    if (loadInterval) clearInterval(loadInterval);
-    const loader = showLoaderPreview(event.target.value);
-    loadInterval = setInterval((obj)=>{
-        animation.innerHTML = loader(obj);
-    }, 250, {count: 0, moveTo: 'right'})
+    showLoader(event.target.value, false, false)
 });
 function showLoader(loaderType, shouldClearPreview, shouldSave){
     if (shouldClearPreview) animation.innerHTML = '';
@@ -136,10 +134,11 @@ function showLoader(loaderType, shouldClearPreview, shouldSave){
     const loader = showLoaderPreview(loaderType);
     loadInterval = setInterval((obj)=>{
         document.title = loader(obj);
-    }, 250, {count: 0, moveTo: 'right'})
+    }, 250, {count: 0, moveTo: 'right'});
+    if (shouldSave) setCookie('loader', loaderType, 100 )
 };
 apply.addEventListener('click',()=>{
-    showLoader()
+    showLoader(select.value, true,true )
 });
 
 // setInterval(arrow,500, {count: 0});
