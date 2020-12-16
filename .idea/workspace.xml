@@ -20,9 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="706f5f50-0d71-4b54-aace-848596addd0d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/demo1/src/task3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW9/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW9/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo1/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo1/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +80,8 @@
       <workItem from="1607874232762" duration="433000" />
       <workItem from="1607896426206" duration="6499000" />
       <workItem from="1607954770683" duration="13182000" />
-      <workItem from="1608063570149" duration="6732000" />
+      <workItem from="1608063570149" duration="16900000" />
+      <workItem from="1608115655119" duration="9019000" />
     </task>
     <servers />
   </component>
@@ -104,5 +105,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="827" y="222" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607379021647" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1608119446479">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608119446479" />
   </component>
 </project>
