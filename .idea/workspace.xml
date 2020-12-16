@@ -20,7 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="706f5f50-0d71-4b54-aace-848596addd0d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/HW9/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HW9/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW9/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/HW9/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HW9/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/HW9/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +36,7 @@
       <list>
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -49,6 +53,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/HW 3" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -80,7 +85,7 @@
       <workItem from="1607896426206" duration="6499000" />
       <workItem from="1607954770683" duration="13182000" />
       <workItem from="1608063570149" duration="16900000" />
-      <workItem from="1608115655119" duration="9989000" />
+      <workItem from="1608115655119" duration="22868000" />
     </task>
     <servers />
   </component>
@@ -104,9 +109,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="827" y="222" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607379021647" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1608119446479">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1608155201771">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608119446479" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608155201771" />
   </component>
 </project>

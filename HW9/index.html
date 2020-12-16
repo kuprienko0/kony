@@ -5,28 +5,28 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 <body>
-<div class="main">
-    <div class="select" style="display: flex">
-        <div class="lastVisitDiv" id="lastVisitDiv"></div>
-        <select name="select" id="select">
-            <option value="arrow" selected>arrow</option>
-            <option value="bouncingBall">bouncingBall</option>
-            <option value="SimpleDots">simpleDots</option>
-            <option value="toggle8">toggle8</option>
-            <option value="arrow3">arrow3</option>
-            <option value="spin3">spin3</option>
-            <option value="spin">spin</option>
-            <option value="grow2">grow2</option>
-            <option value="star">star</option>
-            <option value="grow1">grow1</option>
-        </select>
-    </div>
-    <div class="animation" id="animation"></div>
-    <button id="apply">Apply</button>
+<div id="lastSeenDiv"></div>
+<div class="wrapper">
+    <select name="slider" id="sliderSelect">
+        <option value="-1" selected id="selectDefaultOption">Select Slider</option>
+        <option value="arrow">Arrow</option>
+        <option value="bouncingBall">Bouncing ball</option>
+        <option value="simpleDots">Simple dots</option>
+        <option value="toggle8">Toggle 8</option>
+        <option value="arrow3">Arrow 3</option>
+        <option value="spin3">Spin 3</option>
+        <option value="spin">Spin 1</option>
+        <option value="grow2">Grow 2</option>
+        <option value="star">Star 1</option>
+        <option value="grow1">Grow 1</option>
+    </select>
+    <a href="#" id="applySliderBtn">Apply Slider</a>
 </div>
-<script src="script.js"></script>
+<div id="sliderPreview">Not selected</div>
+<script src="main.js"></script>
 </body>
 </html>

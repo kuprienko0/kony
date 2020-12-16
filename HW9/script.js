@@ -12,7 +12,7 @@ function setCookie(cname, cvalue, exdays){
     document.cookie = `${cname}=${cvalue};${expires};path=/`;
 };
 const cookie = getCookie('loader');
-showLoaderPreview(cookie, false, false)
+showLoaderPreview(cookie, false, false);
 let rez = '';
 function time(){
     const lastVisit = getCookie('lastVisit');
@@ -41,9 +41,9 @@ function arrow(obj) {
         if (obj.count === 8) obj.count = 0;
         obj.count++;
         return symbols[obj.count-1];
-
 };
 function bouncingBall(obj) {
+    ["(", " ", " ", " "," " ," " , ")"]
     let str = `(                     )`;
     if(obj.count === str.length) obj.moveTo = 'left';
     if(obj.count === 0) obj.moveTo = 'right';
@@ -128,7 +128,7 @@ let loadInterval;
 select.addEventListener('change',(event)=>{
     showLoader(event.target.value, false, false)
 });
-function showLoader(loaderType, shouldClearPreview, shouldSave){
+ showLoader = (loaderType, shouldClearPreview, shouldSave)=>{
     if (shouldClearPreview) animation.innerHTML = '';
     if (loadInterval) clearInterval(loadInterval);
     const loader = showLoaderPreview(loaderType);
