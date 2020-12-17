@@ -1,19 +1,31 @@
 export default function triangles(trianglesArr){
     const incorrectData = trianglesArr.filter((triangle)=>{
-        if (!triangle.vertical || triangle.vertical.length !== 3) return true;
+        if (!triangle.vertices || triangle.vertices.length !== 3) return true;
         const [first,second,third] = triangle.vertices.toLowerCase().split('');
         if (!triangle[first] || !triangle[second] || !triangle[third]) return true;
         if (typeof triangle[first] !== "number" || typeof triangle[second] !== "number" || typeof triangle[third] !== "number") return true;
         return false;
     });
-    if (incorrectData.length) return
+    if (incorrectData.length) return { status: 'failed', reason: 'Incorrect arguments'};
+    let isDuplicate;
+    for (let i = 0; i<trianglesArr.length; i++){
+        for (let j = i+1; j<trianglesArr.length; j++){
+            if (trianglesArr[i].vertices.split('').sort().join('') === trianglesArr[j].vertices.split('').sort().join('')){
+                isDuplicate = true;
+                break
+            }
+        }
+        if (isDuplicate) break;
+    };
+    if (isDuplicate) return { status: 'failed', reason: 'Incorrect arguments'};
     let sortArr = trianglesArr.sort((a, b)=>{
-        const [first,second,third] = a.vertices.toLowerCase().split('');
-        let semiPerA = (a[first] + a[second] +a[third])/2;
-        let semiPerB = (b[first] + b[second] +b[third])/2;
-        let squareA = Math.sqrt(semiPerA*(semiPerA - a[first]) * (semiPerA - a[second]) * (semiPerA - a[third]));
-        let squareB = Math.sqrt(semiPerB* (semiPerB - b[first]) * (semiPerB - b[second]) * (semiPerB - b[third]));
-        return squareA - squareB;
+        const [firstA,secondA,thirdA] = a.vertices.toLowerCase().split('');
+        const [firstB,secondB,thirdB] = b.vertices.toLowerCase().split('');
+        const semiPerA = (a[firstA] + a[secondA] +a[thirdA])/2;
+        const semiPerB = (b[firstB] + b[secondB] +b[thirdB])/2;
+        const squareA = Math.sqrt((semiPerA*(semiPerA - a[firstA]) * (semiPerA - a[secondA]) * (semiPerA - a[thirdA])));
+        const squareB = Math.sqrt((semiPerB* (semiPerB - b[firstB]) * (semiPerB - b[secondB]) * (semiPerB - b[thirdB])));
+        return  squareB - squareA;
     });
     return sortArr;
 }
