@@ -1,0 +1,66 @@
+.wrapper{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion-collapse{
+    padding: 50px;
+}
+.input-group-text-task1{
+    width: 80px;
+}
+.input-group-text-task2{
+     width: 150px;
+ }
+.input-group-text-task3{
+    width: 160px;
+}
+.input-group-text-task5{
+    width: 50px;
+}
+.input-group-text-task6{
+    width: 90px;
+}
+.input-group-text-task7{
+    width: 80px;
+}
+.spanTask7{
+    padding-left: 35px;
+}
+#task1_btn{
+    padding: 10px 25px;
+    width: 150px;
+    margin: 25px;
+}
+#task2_btn{
+    padding: 10px 25px;
+    width: 150px;
+    margin: 25px;
+}
+#task3_btn{
+    padding: 10px 25px;
+    width: 150px;
+    margin: 25px;
+}
+#task4_btn{
+    padding: 10px 25px;
+    width: 150px;
+    margin: 25px;
+}
+#task5_btn{
+    padding: 10px 25px;
+    width: 150px;
+    margin: 25px;
+}
+#task6_btn{
+    padding: 10px 25px;
+    width: 150px;
+    margin: 25px;
+}
+#task7_btn{
+    padding: 10px 25px;
+    width: 150px;
+    margin: 25px;
+}

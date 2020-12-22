@@ -1,5 +1,5 @@
 export default function palindrome(num){
-    if ( num > -10 && num < 10 ) {
+    if (  num > -10 && num < 10 ) {
         return JSON.stringify({
             status: 'failed',
             reason: 'Incorrect arguments. Palindrome have to be more then 10 or less than -10.'

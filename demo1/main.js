@@ -9,7 +9,7 @@ import fibonacci from "./src/task7.js";
 task1_btn.addEventListener('click', () => { task1_result.innerHTML = chessBoard(Number(task1_height.value), Number(task1_width.value), task1_char.value)});
 
 task2_btn.addEventListener('click', () => {
-    task2_result.innerHTML = `Biggest convert ${envelops(
+    task2_result.innerHTML = ` Result: ${envelops(
         {
             height: Number(task2_height1.value),
             width: Number(task2_with1.value)
@@ -36,14 +36,19 @@ task3_add_triangle.addEventListener('click' , () => {
 
 task3_btn.addEventListener('click', () => {
     const sortedTriangles = triangles(trianglesArray);
-    task3_result.innerHTML = `Sorted triangles: ${sortedTriangles.map((t) => t.vertices).join(' ')}`;
+    if (Array.isArray(sortedTriangles)){
+        task3_result.innerHTML = `Sorted triangles: ${sortedTriangles.map((t) => t.vertices).join(' ')}`;
+    } else {
+        task3_result.innerHTML = sortedTriangles;
+    }
+
 });
 
 task4_btn.addEventListener('click', () => { task4_result.innerHTML = palindrome(task4_number.value)});
 
 task5_btn.addEventListener('click', () => { task5_result.innerHTML = luckyTicket({ min: Number(task5_min.value), max: Number(task5_max.value) })});
 
-task6_btn.addEventListener('click', () => { task6_result.innerHTML = numericalSequence(Number(task6_length.value), Number(task6_minPow.value)); console.log(numericalSequence(Number(task6_length.length), Number(task6_minPow.length))) });
+task6_btn.addEventListener('click', () => { task6_result.innerHTML = numericalSequence(Number(task6_length.value), Number(task6_minPow.value))});
 
 task7_length.addEventListener('input', (e) => {
     const value = e.target.value;
@@ -73,10 +78,10 @@ task7_btn.addEventListener('click', () => {
 });
 
 
-console.log(chessBoard(10,10,'*'));
-console.log(envelops({width: 3, height: 4}, {width:5, height:6}));
-console.log(triangles([{vertices: 'ABC', a: 10, b: 10, c: 10}, {vertices: 'CAB', a: 30, b: 30, c: 30}, {vertices: 'DEF', d: 20, e: 20, f: 20}]));
-console.log(palindrome('1232101234588012877814256311'));
-console.log(luckyTicket({min: 100000, max: 100200}));
-console.log(numericalSequence(20,10));
-console.log(fibonacci({min: 10, max: 200}));
+// console.log(chessBoard(10,10,'*'));
+// console.log(envelops({width: 3, height: 4}, {width:5, height:6}));
+// console.log(triangles([{vertices: 'ABC', a: 10, b: 10, c: 10}, {vertices: 'CAB', a: 30, b: 30, c: 30}, {vertices: 'DEF', d: 20, e: 20, f: 20}]));
+// console.log(palindrome('1232101234588012877814256311'));
+// console.log(luckyTicket({min: 100000, max: 100200}));
+// console.log(numericalSequence(20,10));
+// console.log(fibonacci({min: 10, max: 200}));
