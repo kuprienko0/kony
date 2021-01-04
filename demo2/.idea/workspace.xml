@@ -20,17 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5874b069-8938-4e94-8b22-b51991be235e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/components/content/controller-content.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/content/model-content.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/content/view-content.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/modal/controller-modal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/modal/model-modal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/modal/view-modal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/publisher.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/sort-search/controller-sort-search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/sort-search/model-sort-search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/sort-search/view-sort-search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/helpers/events.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../demo1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/content/controller-content.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/content/controller-content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/content/view-content.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/content/view-content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/modal/controller-modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modal/controller-modal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/modal/view-modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modal/view-modal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/publisher.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/publisher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1609602757605</updated>
       <workItem from="1609602758683" duration="6846000" />
-      <workItem from="1609696723496" duration="17643000" />
+      <workItem from="1609696723496" duration="22799000" />
     </task>
     <servers />
   </component>

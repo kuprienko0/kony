@@ -1,3 +1,4 @@
+import * as events from './events.js';
 export default class Publisher {
     listeners = {};
 
@@ -19,5 +20,14 @@ export default class Publisher {
         }
 
         return this.listeners[eventType];
+    };
+
+    get methods(){
+        return {
+            notify : this.notify,
+            unsubscribe : this.unsubscribe,
+            subscribe : this.subscribe,
+            events
+        }
     }
 }
