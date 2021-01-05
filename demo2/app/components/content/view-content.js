@@ -5,6 +5,7 @@ export default class ViewContent {
     products = document.getElementById('products');
 
     render = (data) =>{
+        console.log('blablabla');
         data.forEach((elem, index) =>{
             if (index === 0) return false;
             const card = document.createElement('div');

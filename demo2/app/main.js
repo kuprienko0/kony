@@ -1,7 +1,9 @@
 import ControllerContent from "./components/content/controller-content.js";
 import Publisher from "./helpers/publisher.js";
 import ControllerModal from "./components/modal/controller-modal.js";
+import ControllerSortSearch from "./components/sort-search/controller-sort-search.js";
 
 const publisher = new Publisher();
 const controllerContent = new ControllerContent(publisher.methods);
 const controllerModal = new ControllerModal(publisher.methods);
+const controllerSortSearch = new ControllerSortSearch(publisher.methods);

@@ -20,16 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5874b069-8938-4e94-8b22-b51991be235e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/components/sort-search/controller-sort-search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/sort-search/model-sort-search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/sort-search/view-sort-search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/events.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../demo1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/content/controller-content.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/content/controller-content.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/content/view-content.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/content/view-content.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/modal/controller-modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modal/controller-modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/modal/view-modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modal/view-modal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/modal/model-modal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/sort-search/controller-sort-search.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/sort-search/controller-sort-search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/sort-search/model-sort-search.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/sort-search/model-sort-search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/sort-search/view-sort-search.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/sort-search/view-sort-search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/events.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/helpers/publisher.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/publisher.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -79,7 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1609602757605</updated>
       <workItem from="1609602758683" duration="6846000" />
-      <workItem from="1609696723496" duration="22799000" />
+      <workItem from="1609696723496" duration="30455000" />
     </task>
     <servers />
   </component>
@@ -103,6 +103,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609710827144" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609801735568">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609801735568" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1609705627528">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

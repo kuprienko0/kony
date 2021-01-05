@@ -1,23 +1,28 @@
 import ViewContent from "./view-content.js";
 import ModelContent from "./model-content.js";
 
-export default class ControllerContent{
-    constructor({ subscribe, events, notify }) {
-        this.view = new ViewContent(this.showDetails);
+export default class ControllerContent {
+    constructor({subscribe, events, notify}) {
+        this.view = new ViewContent(this.onShowDetails);
         this.model = new ModelContent();
 
         this.notify = notify;
         this.events = events;
 
+        subscribe(events.AFTER_SORT, this.onSort);
+
         this.init();
     };
 
-    init = async () =>{
+    init = async () => {
         const data = await this.model.getData();
+        this.notify(this.events.ON_DATA_LOAD, data)
         this.view.render(data);
     };
 
-    showDetails = (data) =>{
-        this.notify(this.events.SHOW_DETAILS_MODAL, data)
-    }
+    onShowDetails = (elem) => {
+        this.notify(this.events.SHOW_DETAILS_MODAL, elem)
+    };
+
+    onSort = (data) => this.view.render(data);
 }
