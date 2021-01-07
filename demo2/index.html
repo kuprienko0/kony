@@ -10,23 +10,103 @@
     <title>Demo 2</title>
 </head>
 <body>
-<div class="header"></div>
+
+<div class="header">
+    <nav class="navbar navbar-dark bg-dark bg-gradient">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Food Shop</a>
+                <button type="button" class="cart-btn"></button>
+            </div>
+    </nav>
+</div>
+
 <div class="content">
-    <div class="sort-search">
-
-    </div>
-    <div class="products row" id="products">
-
+    <div class="content-block d-flex ">
+        <div class="filter-background  navbar-dark ps-3 col-1 bg-dark">
+            <div class="product-filter m-2 mt-5 ">
+                <p class="choose-category">Choose category:</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Beverages
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault0">
+                    <label class="form-check-label" for="flexCheckDefault0">
+                        Bread & Bakery
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1" checked>
+                    <label class="form-check-label" for="flexCheckChecked1">
+                        Dairy, Eggs & Cheese
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2" checked>
+                    <label class="form-check-label" for="flexCheckChecked2">
+                        Fruits & Vegetables
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked3" checked>
+                    <label class="form-check-label" for="flexCheckChecked3">
+                        Grains, Pasta & Sides
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked4" checked>
+                    <label class="form-check-label" for="flexCheckChecked4">
+                        Meat & Seafood
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked5" checked>
+                    <label class="form-check-label" for="flexCheckChecked5">
+                        Sweets
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked6" checked>
+                    <label class="form-check-label" for="flexCheckChecked6">
+                        Snacks
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked7" checked>
+                    <label class="form-check-label" for="flexCheckChecked7">
+                        Sauces
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked8" checked>
+                    <label class="form-check-label" for="flexCheckChecked8">
+                        Tea & Coffee
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="product-wrap">
+            <div class="sort-search"></div>
+            <div class="products m-0 row justify-content-around" id="products"></div>
     </div>
 </div>
-<div class="footer"></div>
-<div class="modal fade " id="modal" tabindex="-1">
+
+<div class="footer-dark navbar-dark bg-dark d-flex justify-content-center">
+        <div class="container row">
+            <p class="copyright d-flex justify-content-center align-items-center">Company Name © 2021</p>
+        </div>
+</div>
+
+<div class="modal modal-fullscreen-xl-down fade" arial-hidden="true" id="modal" tabindex="-1">
     <div class="modal-dialog shadow-lg">
         <div class="modal-content">
 
         </div>
     </div>
 </div>
+
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
 <script src="./app/libraries/bootstrap/bootstrap.min.js"></script>
 <script src="./app/main.js" type="module"></script>

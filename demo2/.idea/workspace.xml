@@ -20,18 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5874b069-8938-4e94-8b22-b51991be235e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/components/cart/controller-cart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/cart/model-cart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/cart/view-cart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/pagination/controller-pagination.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/pagination/model-pagination.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/pagination/view-pagination.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/img/cart.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../demo1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/content/controller-content.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/content/controller-content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/content/model-content.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/content/model-content.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/content/view-content.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/content/view-content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/modal/controller-modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modal/controller-modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/modal/model-modal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/modal/view-modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modal/view-modal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/sort-search/controller-sort-search.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/sort-search/controller-sort-search.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/sort-search/model-sort-search.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/sort-search/model-sort-search.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/sort-search/view-sort-search.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/sort-search/view-sort-search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/helpers/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/events.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/helpers/publisher.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/publisher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,11 +68,15 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/img" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitLocal\kony\demo2\app\img" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\GitLocal\kony\demo2\app" />
     </key>
@@ -80,6 +91,8 @@
       <updated>1609602757605</updated>
       <workItem from="1609602758683" duration="6846000" />
       <workItem from="1609696723496" duration="30455000" />
+      <workItem from="1609845501659" duration="695000" />
+      <workItem from="1609934766640" duration="24737000" />
     </task>
     <servers />
   </component>
@@ -103,10 +116,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609710827144" />
+    <state x="720" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609947605968">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="720" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1609947605968" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609801735568">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609801735568" />
+    <state x="268" y="0" width="1668" height="1027" key="dock-window-1" timestamp="1609936295761">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="268" y="0" width="1668" height="1027" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1609936295761" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1609705627528">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

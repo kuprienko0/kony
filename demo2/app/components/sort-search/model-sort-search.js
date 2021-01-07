@@ -5,6 +5,14 @@ export default class ModelSortSearch{
         'price-cheap' : (a,b) => b.price - a.price
     };
     sort = (type) =>{
-        return this.products.sort(this.sortMethods[type]);
-    }
+        this.products = this.products.sort(this.sortMethods[type]);
+        return this.products;
+    };
+
+    search = searchText => {
+        const textToLower = searchText.toLowerCase();
+        console.log(searchText, this.products);
+        return this.products.filter(({ productName }) => productName.toLowerCase().includes(textToLower));
+
+    };
 };

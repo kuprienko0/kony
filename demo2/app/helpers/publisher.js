@@ -1,4 +1,4 @@
-import * as events from './events.js';
+import events from './events.js';
 export default class Publisher {
     listeners = {};
 
@@ -11,7 +11,6 @@ export default class Publisher {
     }
 
     notify = (eventType, data) => {
-        console.log(eventType);
         this.getListeners(eventType).forEach(callback => callback(data));
     }
 

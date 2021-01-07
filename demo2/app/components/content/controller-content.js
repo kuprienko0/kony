@@ -10,6 +10,7 @@ export default class ControllerContent {
         this.events = events;
 
         subscribe(events.AFTER_SORT, this.onSort);
+        subscribe(events.AFTER_SEARCH, this.onSearch);
 
         this.init();
     };
@@ -25,4 +26,5 @@ export default class ControllerContent {
     };
 
     onSort = (data) => this.view.render(data);
+    onSearch = (data) => this.view.render(data);
 }

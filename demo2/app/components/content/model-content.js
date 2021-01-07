@@ -38,11 +38,12 @@ export default class ModelContent {
         }
     ];
 
-    link = 'https://spreadsheets.google.com/feeds/cells/1PXorfz2O2NqH-FcW0nA-HhmtZMmSSwgHheifWc0e1tU/2/public/full?alt=json';
+    link = 'https://spreadsheets.google.com/feeds/cells/1PXorfz2O2NqH-FcW0nA-HhmtZMmSSwgHheifWc0e1tU/1/public/full?alt=json';
     getData = () => fetch(this.link).then((resp)=> resp.json()).then((data)=>this.parseData(data.feed.entry));
     parseData = arr => {
         const shift = this.names.length;
         return arr.reduce((acc, { content }, i) => {
+            if (i <= 8) return acc;
             const index = Math.floor(i / shift);
             const { name, type } = this.names[i % shift];
 
@@ -55,5 +56,6 @@ export default class ModelContent {
 
             return acc;
         }, []);
+
     }
 }
