@@ -23,4 +23,16 @@ export default class ViewModal{
         `
         this.bootstrapModal.show();
     }
+
+    modalContent = document.querySelector('#modal .modal-content');
+    showCart = () =>{
+        this.modalContent.innerHTML = `
+        <div class="modal-header bg-warning bg-gradient">
+                <h5 class="modal-title ">productName</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            
+        `
+        this.bootstrapModal.show();
+    }
 }

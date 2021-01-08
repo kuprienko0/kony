@@ -20,25 +20,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5874b069-8938-4e94-8b22-b51991be235e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/components/cart/controller-cart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/cart/model-cart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/cart/view-cart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/pagination/controller-pagination.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/pagination/model-pagination.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/pagination/view-pagination.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/img/cart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/loader/controller-loader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/loader/view-loader.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../demo1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/cart/controller-cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/cart/controller-cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/cart/view-cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/cart/view-cart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/content/controller-content.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/content/controller-content.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/content/model-content.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/content/model-content.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/content/view-content.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/content/view-content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/modal/controller-modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modal/controller-modal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/modal/view-modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/modal/view-modal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/pagination/controller-pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pagination/controller-pagination.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/pagination/model-pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pagination/model-pagination.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/pagination/view-pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pagination/view-pagination.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/sort-search/controller-sort-search.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/sort-search/controller-sort-search.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/sort-search/model-sort-search.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/sort-search/model-sort-search.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/sort-search/view-sort-search.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/sort-search/view-sort-search.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/helpers/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/events.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/helpers/publisher.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/publisher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +94,9 @@
       <workItem from="1609602758683" duration="6846000" />
       <workItem from="1609696723496" duration="30455000" />
       <workItem from="1609845501659" duration="695000" />
-      <workItem from="1609934766640" duration="24737000" />
+      <workItem from="1609934766640" duration="25757000" />
+      <workItem from="1610018018552" duration="25054000" />
+      <workItem from="1610099608610" duration="3049000" />
     </task>
     <servers />
   </component>
@@ -132,9 +136,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1609705627528" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1609705178575">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1610044449246">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1609705178575" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1610044449246" />
   </component>
 </project>

@@ -44,7 +44,7 @@ export default class ModelContent {
         const shift = this.names.length;
         return arr.reduce((acc, { content }, i) => {
             if (i <= 8) return acc;
-            const index = Math.floor(i / shift);
+            const index = Math.floor(i / shift) -1;
             const { name, type } = this.names[i % shift];
 
             if(!acc[index]){
