@@ -21,7 +21,7 @@ export default class ModelContent {
             type : 'string'
         },
         {
-            name : 'amount',
+            name : 'amountInStore',
             type : 'integer'
         },
         {

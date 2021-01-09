@@ -29,7 +29,7 @@ export default class ViewSortSearch {
         sortSearch.querySelector('input.search-input').addEventListener('input', (e)=> this.onSearch(e));
 
         Object.entries(categories).forEach(([name, isActive]) => this.createCategory(name, isActive));
-        this.filterBlock.insertAdjacentHTML('afterbegin','<p class="choose-category">Choose category:</p>')
+        this.filterBlock.insertAdjacentHTML('afterbegin','<p class="choose-category">Choose category</p>')
     };
 
 
@@ -42,7 +42,7 @@ export default class ViewSortSearch {
                         ${name}
                  </label>`
         formCheck.querySelector(".form-check-input").addEventListener('change', (e)=> this.onFilter(e,name));
-        this.filterBlock.appendChild(formCheck);
+        this.filterBlock.querySelector('.wrapper').appendChild(formCheck);
     }
 
 

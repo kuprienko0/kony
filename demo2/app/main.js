@@ -5,11 +5,13 @@ import ControllerSortSearch from "./components/sort-search/controller-sort-searc
 import ControllerLoader from "./components/loader/controller-loader.js";
 import ControllerCart from "./components/cart/controller-cart.js";
 import ControllerPagination from "./components/pagination/controller-pagination.js";
+import ControllerOrder from "./components/order/controller-order.js";
 
 const publisher = new Publisher();
 const controllerCart = new ControllerCart(publisher.methods)
 const controllerLoader = new ControllerLoader(publisher.methods)
 const controllerContent = new ControllerContent(publisher.methods);
 const controllerModal = new ControllerModal(publisher.methods);
+const controllerOrder = new ControllerOrder(publisher.methods);
 const controllerSortSearch = new ControllerSortSearch(publisher.methods);
 const controllerPagination = new ControllerPagination(publisher.methods)

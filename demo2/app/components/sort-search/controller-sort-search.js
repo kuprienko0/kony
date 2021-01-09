@@ -27,6 +27,13 @@ export default class  ControllerSortSearch{
         this.model.activeFilters = updatedFilters;
     }
 
+    onFilter = (event, name) =>{
+        this.updateFilter({activeCategories: {...this.model.activeFilters.activeCategories, [name]: event.target.checked}});
+        const filteredData = this.model.filterData();
+        this.notify(this.events.ON_FILTER, filteredData)
+    }
+
+
     onSort = (event, type) =>{
         event.preventDefault();
         this.updateFilter({sortBy: type});
@@ -39,14 +46,19 @@ export default class  ControllerSortSearch{
         const filteredData = this.model.filterData();
         this.notify(this.events.ON_FILTER, filteredData)
     }
-
-    onFilter = (event, name) =>{
-        console.log(name)
-        this.updateFilter({activeCategories: {...this.model.activeFilters.activeCategories, [name]: event.target.checked}});
-        const filteredData = this.model.filterData();
-        this.notify(this.events.ON_FILTER, filteredData)
-    }
-
-
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

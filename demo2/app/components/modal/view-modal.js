@@ -1,12 +1,12 @@
-export default class ViewModal{
+export default class ViewModal {
     modalContent = document.querySelector('#modal .modal-content');
     bootstrapModal = new bootstrap.Modal(document.getElementById('modal'));
-    showDetails = (data) =>{
+    showDetails = (data) => {
         this.modalContent.innerHTML = `
         <div class="modal-header bg-warning bg-gradient">
-                <h5 class="modal-title ">${data.productName}</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
+             <h5 class="modal-title ">${data.productName}</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
             <img src="${data.img}" class="card-img-top" alt="...">
             <div class="modal-body">
                 <p><b>Ingredients:</b> ${data.ingredients}</p>
@@ -24,15 +24,5 @@ export default class ViewModal{
         this.bootstrapModal.show();
     }
 
-    modalContent = document.querySelector('#modal .modal-content');
-    showCart = () =>{
-        this.modalContent.innerHTML = `
-        <div class="modal-header bg-warning bg-gradient">
-                <h5 class="modal-title ">productName</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            
-        `
-        this.bootstrapModal.show();
-    }
+
 }

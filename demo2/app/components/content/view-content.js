@@ -1,6 +1,7 @@
 export default class ViewContent {
-    constructor(onShowDetails) {
+    constructor(onShowDetails, onAddCart) {
         this.onShowDetails = onShowDetails;
+        this.onAddCart = onAddCart;
     }
     products = document.getElementById('products');
 
@@ -24,14 +25,17 @@ export default class ViewContent {
                 <div class="card-footer bg-transparent">
                     <div class="btn-group d-flex " role="group" aria-label="Basic example">
                         <button type="button" class="btn-details btn btn-info">Details</button>
-                        <button type="button" class=" btn btn-secondary">Add to cart</button>
+                        <button type="button" class="btn-on-cart btn btn-secondary">Add to cart</button>
                     </div>
                 </div>
             </div>
             `;
 
-           card.querySelector('.btn-info').addEventListener('click', ()=>this.onShowDetails(elem));
+           card.querySelector('.btn-details').addEventListener('click', ()=>this.onShowDetails(elem));
+           card.querySelector('.btn-on-cart').addEventListener('click', ()=>this.onAddCart(elem));
+
            this.products.appendChild(card);
+
 
         } );
     };
