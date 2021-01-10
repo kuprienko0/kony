@@ -20,19 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5874b069-8938-4e94-8b22-b51991be235e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/components/bot/controller-bot.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/bot/model-bot.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo1/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/cart/controller-cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/cart/controller-cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/loader/controller-loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/loader/controller-loader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/loader/view-loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/loader/view-loader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/order/controller-order.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/order/controller-order.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/order/model-order.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/order/model-order.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/order/view-order.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/order/view-order.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/events.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/bot/model-bot.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/bot/model-bot.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
