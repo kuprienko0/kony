@@ -7,6 +7,7 @@ const events = {
     ON_PAGINATE: 'When data paginate',
     CREATE_ORDER: 'Replace order data to create order',
     BACK_FROM_ORDER: 'Back to cart from the order modal',
+    SEND_ORDER: 'Send the order to telegram chat'
 };
 
 export default events;

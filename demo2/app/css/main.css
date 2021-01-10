@@ -192,8 +192,8 @@ i {
 
 @media screen and (max-width: 790px){
     .product-filter .wrapper {
-        max-height: 132px;
-        height: 132px;
+        max-height: 180px;
+        height: 180px;
     }
     .product-filter .filters-block-wrapper {
         margin-top: -132px!important;
@@ -222,4 +222,17 @@ i {
     .product-filter .filters-block-wrapper {
         margin-top: -220px!important;
     }
+}
+
+.loader{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: rgb(40, 38, 38);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

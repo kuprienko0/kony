@@ -8,9 +8,11 @@ export default class ControllerLoader{
         this.unsubscribe = unsubscribe;
 
         this.events = events;
-        this.render = this.view.render;
 
+        this.init();
     }
+
+    init = () => this.view.render();
 
     onLoad = _ => {
         this.unsubscribe(this.events.ON_DATA_LOAD, this.onLoad);

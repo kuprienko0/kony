@@ -4,7 +4,7 @@ import ViewOrder from "./view-order.js";
 export default class ControllerOrder{
     constructor({notify, subscribe, events}) {
         this.model = new ModelOrder();
-        this.view = new ViewOrder(this.onBackToCart);
+        this.view = new ViewOrder(this.onBackToCart, this.sendOrder);
 
         this.notify = notify;
         this.events = events;
@@ -20,4 +20,11 @@ export default class ControllerOrder{
     onBackToCart = () => {
         this.notify(this.events.BACK_FROM_ORDER);
     }
+
+    sendOrder = () => {
+        this.notify(this.events.SEND_ORDER, this.model.insertOrderData)
+
+    }
+
+
 }

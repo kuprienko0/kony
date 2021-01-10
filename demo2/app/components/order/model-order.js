@@ -3,4 +3,7 @@ export default class ModelOrder{
     set insertOrderData(data){
         this.orderData = [...data]
     }
+    get insertOrderData(){
+        return this.orderData;
+    }
 }

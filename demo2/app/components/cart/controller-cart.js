@@ -49,4 +49,6 @@ export default class ControllerCart{
     renderCart = () => {
         this.view.updateCart(this.model.getCartData);
     }
+
+
 }

@@ -1,8 +1,9 @@
 export default class ViewOrder{
     modalContent = document.querySelector('#modal .modal-content');
 
-    constructor(onBackToCart) {
+    constructor(onBackToCart, sendOrder) {
         this.onBackToCart = onBackToCart;
+        this.sendOrder = sendOrder;
     }
 
     render = () =>{
@@ -16,18 +17,18 @@ export default class ViewOrder{
         const userInformationBody = document.createElement('div');
         userInformationBody.classList.add('modal-body');
         userInformationBody.innerHTML = `
-            <form>
+            <form class="order-form">
                 <div class="mb-3">
                     <label for="userName" class="form-label">Name</label>
-                    <input type="email" class="form-control" id="userName">
+                    <input type="text" class="form-control" id="userName" name="name">
                 </div>
                 <div class="mb-3">
                     <label for="userSurname" class="form-label">Surname</label>
-                    <input type="email" class="form-control" id="userSurname">
+                    <input type="text" class="form-control" id="userSurname" name="surname">
                 </div>
                 <div class="mb-3">
                     <label for="phoneNumber" class="form-label">Phone number</label>
-                    <input type="email" class="form-control" id="phoneNumber" aria-describedby="phoneHelp">
+                    <input type="text" class="form-control" id="phoneNumber" name="phone" aria-describedby="phoneHelp">
                     <div id="phoneHelp" class="form-text">We'll never share your phone number with anyone else.</div>
                 </div>
                 <div class="mb-3">
@@ -37,11 +38,11 @@ export default class ViewOrder{
                 </div>
                 <div class="mb-3">
                     <label for="userCity" class="form-label">City</label>
-                    <input type="email" class="form-control" id="userCity">
+                    <input type="text" class="form-control" id="userCity" name="city">
                 </div>
                 <div class="mb-3">
                     <label for="userAddress" class="form-label">Address</label>
-                    <input type="email" class="form-control" id="userAddress">
+                    <input type="text" class="form-control" id="userAddress" name="address">
                 </div>
                 <select class="form-select" aria-label="Default select example">
                     <option selected>Payment method</option>
@@ -50,11 +51,16 @@ export default class ViewOrder{
                 </select>
                 <div class="d-flex justify-content-end mt-2">
                     <button type="button" class="btn btn-secondary back-to-cart-btn">Back to cart</button>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary send-order-btn">Submit</button>
                 </div>
             </form>
         `;
+        userInformationBody.querySelector('.order-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            console.log(e)
+        })
         userInformationBody.querySelector('.back-to-cart-btn').addEventListener('click', this.onBackToCart);
+        userInformationBody.querySelector('.send-order-btn').addEventListener('click', this.sendOrder());
         this.modalContent.appendChild(userInformationBody);
     }
 }
