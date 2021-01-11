@@ -8,7 +8,7 @@ export default class ViewOrderHistory{
     }
 
     render = () => {
-        this.historyBlock.insertAdjacentHTML('afterbegin', '<button type="button" class="history-btn">History</button>');
+        this.historyBlock.insertAdjacentHTML('afterbegin', '<button type="button" class="history-btn btn btn-secondary me-3 h-25">History of orders</button>');
         this.historyBlock.querySelector('.history-btn').addEventListener('click', this.onShowHistory);
     }
 

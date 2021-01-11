@@ -1,6 +1,12 @@
-export default class ViewModal {
+export default class ViewProductDetails {
+
+    constructor(onAddCart) {
+        this.onAddCart = onAddCart;
+    }
+
     modalContent = document.querySelector('#modal .modal-content');
     bootstrapModal = new bootstrap.Modal(document.getElementById('modal'));
+
     showDetails = (data) => {
         this.modalContent.innerHTML = `
         <div class="modal-header bg-warning bg-gradient">
@@ -17,10 +23,11 @@ export default class ViewModal {
                     <p class="card-text fs-4">Price: ${data.price} ₴</p>
                 </div>
             <div class="modal-footer" >
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Add to cart</button>
+                <button type="button" class="addToCart btn btn-secondary" data-bs-dismiss="modal">Add to cart</button>
                 <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
             </div>
-        `
+        `;
+        this.modalContent.querySelector('.addToCart').addEventListener('click', ()=>this.onAddCart(data))
         this.bootstrapModal.show();
     }
 

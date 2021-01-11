@@ -15,7 +15,6 @@ export default class ModelSortSearch{
             'Tea & Coffee': true,
         }
     }
-
     products;
     sortMethods = {
         'price-cheap' : (a,b) => a.price - b.price,
@@ -33,7 +32,7 @@ export default class ModelSortSearch{
     filterData = () =>{
         let data = [...this.products];
         data = data.filter(({ productName }) => productName.toLowerCase().includes(this.activeFilters.searchBy.toLowerCase()));
-        data = data.filter(({ category }) => this.activeFilters.activeCategories[category])
+        data = data.filter(({ category }) => this.activeFilters.activeCategories[category]);
         if (this.activeFilters.sortBy){
             data.sort(this.sortMethods[this.activeFilters.sortBy]);
         }

@@ -20,26 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5874b069-8938-4e94-8b22-b51991be235e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/components/orderHistory/controller-order-history.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/orderHistory/model-order-history.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/orderHistory/view-order-history.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/singletone.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/product-details/controller-product-details.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/bot/controller-bot.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/bot/controller-bot.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/bot/model-bot.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/bot/model-bot.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/cart/controller-cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/cart/controller-cart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/cart/model-cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/cart/model-cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/cart/view-cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/cart/view-cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/content/controller-content.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/content/controller-content.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/content/model-content.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/content/model-content.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/content/view-content.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/content/view-content.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/order/controller-order.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/order/controller-order.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/order/model-order.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/order/model-order.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/loader/controller-loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/loader/controller-loader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/modal/controller-modal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/modal/view-modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/product-details/view-product-details.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/order/view-order.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/order/view-order.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/pagination/controller-pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pagination/controller-pagination.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/orderHistory/view-order-history.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/orderHistory/view-order-history.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/pagination/view-pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pagination/view-pagination.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/sort-search/model-sort-search.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/sort-search/model-sort-search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/sort-search/view-sort-search.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/sort-search/view-sort-search.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/events.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/events.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/publisher.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/publisher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/libraries/bootstrap/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/libraries/bootstrap/bootstrap.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -97,7 +96,8 @@
       <workItem from="1609934766640" duration="25757000" />
       <workItem from="1610018018552" duration="25054000" />
       <workItem from="1610099608610" duration="36029000" />
-      <workItem from="1610282808863" duration="21505000" />
+      <workItem from="1610282808863" duration="22778000" />
+      <workItem from="1610359771338" duration="23521000" />
     </task>
     <servers />
   </component>
@@ -133,10 +133,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="268" y="0" width="1668" height="1027" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1609936295761" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1609705627528">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1610324092861">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1609705627528" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1610324092861" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1610044449246">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

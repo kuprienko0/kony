@@ -1,5 +1,14 @@
 import events from './events.js';
 export default class Publisher {
+
+    constructor() {
+        if (typeof Publisher.instance === 'object') return Publisher.instance;
+
+        Publisher.instance = this;
+
+        return this;
+    }
+
     listeners = {};
 
     subscribe = (eventType, callback) => {

@@ -14,7 +14,7 @@ export default class ControllerLoader{
 
     init = () => this.view.render();
 
-    onLoad = _ => {
+    onLoad = () => {
         this.unsubscribe(this.events.ON_DATA_LOAD, this.onLoad);
         this.view.hideLoader();
     }

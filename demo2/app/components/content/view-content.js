@@ -3,6 +3,7 @@ export default class ViewContent {
         this.onShowDetails = onShowDetails;
         this.onAddCart = onAddCart;
     }
+
     products = document.getElementById('products');
 
     render = (data) =>{
@@ -13,7 +14,7 @@ export default class ViewContent {
             card.classList.add('card-wrapper');
             card.innerHTML = `
             <div class="card product-card">
-                <div class=" card-img d-flex justify-content-center align-items-center"> 
+                <div class=" card-img d-flex justify-content-center"> 
                     <img src="${elem.img}" class="card-img-top" alt="...">
                 </div>
                 <div class="card-body ">

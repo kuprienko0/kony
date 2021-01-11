@@ -5,7 +5,6 @@ export default class ViewPagination{
         this.onChangePage = onChangePage;
     }
 
-
     render = (numberOfPage, activePageNumber) =>{
         this.paginationBlock.innerHTML = `
         <nav aria-label="...">
@@ -21,7 +20,6 @@ export default class ViewPagination{
             link.setAttribute('href', '#');
             link.innerText = i;
             link.addEventListener('click', (e) => {
-                // e.preventDefault();
                 this.onChangePage(i);
             });
             pageItem.appendChild(link);

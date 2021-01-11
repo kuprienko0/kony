@@ -5,31 +5,38 @@
 .filter-wrapper {
     width: 12%;
 }
+
 .product-wrap {
     width: 88%;
 }
+
 .products {
     display: flex;
     flex-wrap: wrap;
 }
+
 .products .card-wrapper  {
     padding: 10px;
     flex: 1 0 calc(100% / 5);
     max-width: calc(100% / 5);
 }
+
 .products .card-wrapper .product-card {
     box-shadow: 1px 1px 4px 0px #00000038;
     min-height: 100%;
 }
+
 .card-img{
     height: 300px;
     padding: 0 20px;
 }
+
 .card-body {
     display: flex;
     flex-flow: column;
     justify-content: space-between;
 }
+
 .cart-btn{
     background: transparent url("../img/cart.png") no-repeat center;
     height: 50px;
@@ -52,6 +59,7 @@
 .product-filter {
     position: fixed;
 }
+
 .product-filter form-select{
     height: 38px;
 }
@@ -65,28 +73,46 @@ label.form-check-label{
     font-size: 16px;
     font-family: system-ui;
 }
+
 .form-check-input{
     background-color: #fed000!important;
     border: 1px solid  #8c4d0b!important;
+
+    height: 20px!important;
+    width: 20px!important;
 }
+
+.form-check-input:checked{
+    background-image: url("https://emojio.ru/images/apple-b/2714-fe0f.png") !important;
+}
+
 .btn-details{
     background-color: #fed000!important;
     border: 1px solid  #fed000!important;
 }
+
 .btn-check:focus+.btn-info, .btn-info:focus {
     box-shadow: 0 0 0 0.25rem #f5d02a !important;
 }
+
 .choose-category {
     color: white;
     font-size: 18px;
 }
+
 .content-block{
     width: 100%;
     min-height: calc(100vh - 106px);
 }
+
 .products{
     background: #f8f9fa;
 }
+
+.card-img-top{
+    object-fit: contain;
+}
+
 .back-to-cart-btn {
     margin-right: 15px;
 }

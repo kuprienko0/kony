@@ -60,7 +60,6 @@ export default class ModelCart{
     increaseProduct = (productID) => {
         for (let i = 0; i < this.productsInCart.length; i++) {
             if (this.productsInCart[i].ID === productID) {
-                console.log(this.productsInCart[i])
                 if (Number(this.productsInCart[i].amountInStore) >= this.productsInCart[i].amount + 1) {
                     this.productsInCart[i].amount++;
                     break;

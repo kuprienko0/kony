@@ -24,9 +24,19 @@ export default class ViewSortSearch {
                 </form>
             </div>`
 
-        sortSearch.querySelector('a[data-type=exp]').addEventListener('click', (e)=> this.onSort(e,'price-exp'));
-        sortSearch.querySelector('a[data-type=cheap]').addEventListener('click', (e)=> this.onSort(e,'price-cheap'));
-        sortSearch.querySelector('input.search-input').addEventListener('input', (e)=> this.onSearch(e));
+        const dropdownToggle = sortSearch.querySelector('.dropdown-toggle');
+
+        sortSearch.querySelector('a[data-type=exp]').addEventListener('click', (e)=> {
+            dropdownToggle.innerHTML = 'Expensive first';
+            this.onSort(e, 'price-exp');
+        });
+
+        sortSearch.querySelector('a[data-type=cheap]').addEventListener('click', (e)=> {
+            dropdownToggle.innerHTML = 'Cheap first';
+            this.onSort(e, 'price-cheap');
+        });
+
+        sortSearch.querySelector('input.search-input').addEventListener('input', this.onSearch);
 
         Object.entries(categories).forEach(([name, isActive]) => this.createCategory(name, isActive));
         this.filterBlock.insertAdjacentHTML('afterbegin','<p class="choose-category">Choose category</p>')

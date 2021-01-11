@@ -1,6 +1,5 @@
 export default class ViewOrder{
     modalContent = document.querySelector('#modal .modal-content');
-    bootstrapModal = new bootstrap.Modal(document.getElementById('modal'));
 
     constructor(onBackToCart, sendOrder) {
         this.onBackToCart = onBackToCart;
