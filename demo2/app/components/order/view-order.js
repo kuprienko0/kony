@@ -1,5 +1,6 @@
 export default class ViewOrder{
     modalContent = document.querySelector('#modal .modal-content');
+    bootstrapModal = new bootstrap.Modal(document.getElementById('modal'));
 
     constructor(onBackToCart, sendOrder) {
         this.onBackToCart = onBackToCart;
@@ -17,7 +18,7 @@ export default class ViewOrder{
         const userInformationBody = document.createElement('div');
         userInformationBody.classList.add('modal-body');
         userInformationBody.innerHTML = `
-            <form class="order-form">
+            <form class="order-form"  name="createOrder" >
                 <div class="mb-3">
                     <label for="userName" class="form-label">Name</label>
                     <input type="text" class="form-control" id="userName" name="name">
@@ -33,7 +34,7 @@ export default class ViewOrder{
                 </div>
                 <div class="mb-3">
                     <label for="userEmail" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp">
+                    <input type="email" class="form-control" id="userEmail" name="email" aria-describedby="emailHelp">
                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
                 <div class="mb-3">
@@ -44,8 +45,8 @@ export default class ViewOrder{
                     <label for="userAddress" class="form-label">Address</label>
                     <input type="text" class="form-control" id="userAddress" name="address">
                 </div>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Payment method</option>
+                <select class="form-select" aria-label="Default select example" name="payment">
+                    <option selected value="-1">Payment method</option>
                     <option value="1">Cash to the courier</option>
                     <option value="2">Payment online</option>
                 </select>
@@ -55,12 +56,18 @@ export default class ViewOrder{
                 </div>
             </form>
         `;
-        userInformationBody.querySelector('.order-form').addEventListener('submit', (e) => {
-            e.preventDefault();
-            console.log(e)
-        })
         userInformationBody.querySelector('.back-to-cart-btn').addEventListener('click', this.onBackToCart);
-        userInformationBody.querySelector('.send-order-btn').addEventListener('click', this.sendOrder());
+        userInformationBody.querySelector('.order-form').addEventListener('submit', this.sendOrder);
         this.modalContent.appendChild(userInformationBody);
+    }
+
+    setInvalidField = (field) => {
+        field.classList.remove('valid');
+        field.classList.add('has-error');
+    }
+
+    setValidField = (field) => {
+        field.classList.remove('has-error');
+        field.classList.add('valid');
     }
 }

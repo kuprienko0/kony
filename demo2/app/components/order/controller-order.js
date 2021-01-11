@@ -3,7 +3,7 @@ import ViewOrder from "./view-order.js";
 
 export default class ControllerOrder{
     constructor({notify, subscribe, events}) {
-        this.model = new ModelOrder();
+        this.model = new ModelOrder(this.setInvalidFormField, this.setValidFormField);
         this.view = new ViewOrder(this.onBackToCart, this.sendOrder);
 
         this.notify = notify;
@@ -21,10 +21,20 @@ export default class ControllerOrder{
         this.notify(this.events.BACK_FROM_ORDER);
     }
 
-    sendOrder = () => {
-        this.notify(this.events.SEND_ORDER, this.model.insertOrderData)
-
+    sendOrder = (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        const order = this.model.validateForm();
+        if (order) {
+            this.notify(this.events.SEND_ORDER, order);
+        }
     }
 
+    setInvalidFormField = (field) => {
+        this.view.setInvalidField(field);
+    }
 
+    setValidFormField = (field) => {
+        this.view.setValidField(field);
+    }
 }

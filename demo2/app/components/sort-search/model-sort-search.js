@@ -18,8 +18,8 @@ export default class ModelSortSearch{
 
     products;
     sortMethods = {
-        'price-exp' : (a,b) => a.price - b.price,
-        'price-cheap' : (a,b) => b.price - a.price
+        'price-cheap' : (a,b) => a.price - b.price,
+        'price-exp' : (a,b) => b.price - a.price
     }
 
     get activeFilters(){
@@ -31,7 +31,6 @@ export default class ModelSortSearch{
     }
 
     filterData = () =>{
-        console.log(this.activeFilters.activeCategories)
         let data = [...this.products];
         data = data.filter(({ productName }) => productName.toLowerCase().includes(this.activeFilters.searchBy.toLowerCase()));
         data = data.filter(({ category }) => this.activeFilters.activeCategories[category])

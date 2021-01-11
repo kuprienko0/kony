@@ -21,7 +21,7 @@ export default class ViewPagination{
             link.setAttribute('href', '#');
             link.innerText = i;
             link.addEventListener('click', (e) => {
-                e.preventDefault();
+                // e.preventDefault();
                 this.onChangePage(i);
             });
             pageItem.appendChild(link);

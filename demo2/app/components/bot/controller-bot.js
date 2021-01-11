@@ -8,6 +8,7 @@ export default class ControllerBot {
     }
 
     onSend = (order) => {
+        this.model.initTokens()
         this.model.send(order);
     }
 }

@@ -16,6 +16,7 @@ export default class ControllerPagination{
 
     onDataLoad = (data) => {
         this.model.setProducts = data;
+        this.model.setCurrentPage = 1;
         const paginatedData = this.model.paginateData();
         this.view.render(this.model.pagesNumber, this.model.activePageNumber);
         this.notify(this.events.ON_PAGINATE, paginatedData);

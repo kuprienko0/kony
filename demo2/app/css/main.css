@@ -96,6 +96,14 @@ i {
     user-select: none;
 }
 
+.order-form input.has-error, .order-form select.has-error {
+    border: 1px solid #ff4848;
+}
+
+.order-form input.valid, .order-form select.valid {
+    border: 1px solid #54ff48;
+}
+
 @media screen and (max-width: 1790px){
     .filter-wrapper {
         width: 15%;
@@ -196,8 +204,9 @@ i {
         height: 180px;
     }
     .product-filter .filters-block-wrapper {
-        margin-top: -132px!important;
+        margin-top: -180px!important;
     }
+
 }
 
 @media screen and (max-width: 640px){

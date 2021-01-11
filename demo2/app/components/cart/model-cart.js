@@ -1,8 +1,17 @@
 export default class ModelCart{
     productsInCart = [];
+    countPrice = 0;
 
     get getCartData () {
         return this.productsInCart;
+    }
+
+    get totalPrice (){
+        return this.countPrice;
+    }
+
+    clearCart = () => {
+        this.productsInCart = [];
     }
 
     addToCart = (product) =>{
@@ -23,11 +32,19 @@ export default class ModelCart{
         if (!this.productsInCart.length) {
             this.productsInCart.push({...product,amount: 1});
         }
+        this.countTotalPrice();
+    }
+
+    countTotalPrice = () =>{
+        this.countPrice = this.productsInCart.reduce((currValue, nextItem) =>{
+            return currValue + nextItem.price * nextItem.amount
+        },0)
     }
 
     removeFromCart = (productId) =>{
         const cartWithRemote = this.productsInCart.filter((item)=> item.ID !== productId);
         this.productsInCart = [...cartWithRemote];
+        this.countTotalPrice();
     }
 
     reduceProduct = (productID) => {
@@ -37,6 +54,7 @@ export default class ModelCart{
                 break;
             }
         }
+        this.countTotalPrice();
     }
 
     increaseProduct = (productID) => {
@@ -50,5 +68,6 @@ export default class ModelCart{
                 break;
             }
         }
+        this.countTotalPrice();
     }
 }

@@ -7,7 +7,8 @@ export default class ViewContent {
 
     render = (data) =>{
         this.products.innerHTML = '';
-        data.forEach((elem, index) =>{
+        console.log(data)
+        data.forEach((elem) =>{
             const card = document.createElement('div');
             card.classList.add('card-wrapper');
             card.innerHTML = `
@@ -35,8 +36,6 @@ export default class ViewContent {
            card.querySelector('.btn-on-cart').addEventListener('click', ()=>this.onAddCart(elem));
 
            this.products.appendChild(card);
-
-
         } );
     };
 

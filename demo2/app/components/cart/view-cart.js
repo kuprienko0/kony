@@ -9,22 +9,14 @@ export default class ViewCart{
         this.onCreateOrder = onCreateOrder;
     }
 
-    cartBlock = document.querySelector('.header');
+    cartBlock = document.querySelector('.header-buttons');
     render = () => {
-        this.cartBlock.innerHTML = `
-        <nav class="navbar navbar-dark bg-dark bg-gradient">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Food Shop</a>
-                <button type="button" class="btn-cart cart-btn"></button>
-            </div>
-        </nav>`
-        this.cartBlock.querySelector('.btn-cart').addEventListener('click', () => this.onShowCart());
-
-
+        this.cartBlock.innerHTML += `<button type="button" class="cart-btn"></button>`;
+        this.cartBlock.querySelector('.cart-btn').addEventListener('click', () => this.onShowCart());
     }
 
     modalContent = document.querySelector('#modal .modal-content');
-    updateCart = (cartData) => {
+    updateCart = (cartData, totalPrice) => {
         this.modalContent.innerHTML = `
         <div class="modal-header bg-warning bg-gradient">
             <h5 class="modal-title "><i class="bi bi-cart2"></i> Cart</h5>
@@ -48,6 +40,16 @@ export default class ViewCart{
                 </thead>
                 <tbody>
                 </tbody>
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>${totalPrice}</td>
+                        <td></td>
+                    </tr>
+                </tfoot>
             </table>
         `;
         } else {
@@ -91,4 +93,6 @@ export default class ViewCart{
     }
 
     showCart = () => this.bootstrapModal.show();
+
+    hideCart = () => this.bootstrapModal.hide();
 }

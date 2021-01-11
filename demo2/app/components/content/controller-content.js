@@ -28,7 +28,5 @@ export default class ControllerContent {
         this.notify(this.events.ON_ADD_CART, elem)
     }
 
-    onFilter = (data) => this.view.render(data);
-
     onPaginate = (data) => this.view.render(data);
 }
