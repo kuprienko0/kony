@@ -7,6 +7,7 @@ export default class ViewContent {
     products = document.getElementById('products');
 
     render = (data) =>{
+        debugger;
         this.products.innerHTML = '';
         console.log(data)
         data.forEach((elem) =>{

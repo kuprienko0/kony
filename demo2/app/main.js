@@ -1,5 +1,5 @@
 import Publisher from "./helpers/publisher.js";
-import Singletone from "./helpers/singletone.js";
+// import Singletone from "./helpers/singletone.js";
 import ControllerContent from "./components/content/controller-content.js";
 import ControllerProductDetails from "./components/product-details/controller-product-details.js";
 import ControllerSortSearch from "./components/sort-search/controller-sort-search.js";
@@ -11,9 +11,7 @@ import ControllerBot from "./components/bot/controller-bot.js";
 import ControllerOrderHistory from "./components/orderHistory/controller-order-history.js";
 
 const publisher = new Publisher();
-// const controllerLoader = new ControllerLoader(publisher.methods);
-const { getInstance: getControllerLoaderInstance } = Singletone(ControllerLoader, publisher.methods);
-const controllerLoader = getControllerLoaderInstance();
+const controllerLoader = new ControllerLoader(publisher.methods);
 const controllerCart = new ControllerCart(publisher.methods);
 const controllerContent = new ControllerContent(publisher.methods);
 const controllerProductDetails = new ControllerProductDetails(publisher.methods);

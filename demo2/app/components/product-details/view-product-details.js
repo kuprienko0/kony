@@ -1,11 +1,13 @@
 export default class ViewProductDetails {
+    bootstrapModal = new bootstrap.Modal(document.getElementById('modal'));
+    modalContent = document.querySelector('#modal .modal-content');
+
 
     constructor(onAddCart) {
         this.onAddCart = onAddCart;
     }
 
-    modalContent = document.querySelector('#modal .modal-content');
-    bootstrapModal = new bootstrap.Modal(document.getElementById('modal'));
+
 
     showDetails = (data) => {
         this.modalContent.innerHTML = `

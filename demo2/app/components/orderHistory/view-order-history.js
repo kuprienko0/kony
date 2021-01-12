@@ -1,7 +1,9 @@
 export default class ViewOrderHistory{
-    historyBlock = document.querySelector('.header-buttons');
     bootstrapModal = new bootstrap.Modal(document.getElementById('modal'));
     modalContent = document.querySelector('#modal .modal-content');
+
+    historyBlock = document.querySelector('.header-buttons');
+
 
     constructor(onShowHistory) {
         this.onShowHistory = onShowHistory;

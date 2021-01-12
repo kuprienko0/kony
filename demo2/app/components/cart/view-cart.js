@@ -1,5 +1,7 @@
 export default class ViewCart{
+
     bootstrapModal = new bootstrap.Modal(document.getElementById('modal'));
+    modalContent = document.querySelector('#modal .modal-content');
 
     constructor(onShowCart, onIncreaseProductAmount, onReduceProductAmount, onDeleteProduct, onCreateOrder) {
         this.onShowCart = onShowCart;
